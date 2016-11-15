@@ -1,7 +1,7 @@
 require 'alexa_skills_ruby'
 require_relative 'bank_details_lookup_service'
 
-class ValidateUkBankDetailsHandler < AlexSkillsRuby::Handler
+class ValidateUkBankDetailsHandler < AlexaSkillsRuby::Handler
   on_intent("ValidateUkBankDetails") do
     account_number = request.intent.slots["AccountNumber"]
     sort_code = request.intent.slots["SortCode"]
@@ -21,7 +21,7 @@ class ValidateUkBankDetailsHandler < AlexSkillsRuby::Handler
     rescue GoCardlessPro::ValidationError => exception
       logger.error "Validation failure when looking up bank details: #{exception.to_s}"
 
-      response.set_output_speech_text("Those bank details are not valid.")
+      response.set_output_speech_text("Those bank details are invalid.")
     rescue GoCardlessPro::GoCardlessError => exception
       logger.error "Unknown GC failure when looking up bank details: #{exception.to_s}"
 

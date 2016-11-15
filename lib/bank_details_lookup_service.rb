@@ -9,8 +9,8 @@ class BankDetailsLookupService
     client.bank_details_lookups.create(
       params: {
         country_code: "GB",
-        account_number: "55779911",
-        branch_code: "200000"
+        account_number: account_number,
+        branch_code: sort_code
       }
     )
   end

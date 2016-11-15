@@ -2,6 +2,7 @@ require 'sinatra'
 require 'gocardless_pro'
 require 'dotenv'
 require 'alexa_skills_ruby'
+require 'prius'
 require_relative 'lib/validate_uk_bank_details_handler'
 
 Dotenv.load
