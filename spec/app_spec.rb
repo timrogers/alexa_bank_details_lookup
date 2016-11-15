@@ -8,6 +8,15 @@ describe 'Alexa Bank Details Lookup application' do
 
   let(:post_service) { post '/service', request_data.to_json }
 
+  # The application validates the Alexa application ID. Fill in the request fixture with
+  # the one set in our environment variables so this will work whatever you have set.
+  # We already use VCR's `filter_sensitive_data` to make requests non-environment variable
+  # dependent, but we need to make the request work too.
+  before do
+    request_data['session']['application']['applicationId'] =
+      Prius.get(:alexa_application_id)
+  end
+
   context 'for valid bank details' do
     it 'returns a success message with the bank name' do
       VCR.use_cassette('gocardless/bank_details_lookups_valid') do
