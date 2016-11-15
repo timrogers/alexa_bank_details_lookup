@@ -29,4 +29,12 @@ VCR.configure do |c|
   c.filter_sensitive_data('<access_token>') do |interaction|
     interaction.request.headers['Authorization'].first
   end
+
+  c.filter_sensitive_data('<user agent>') do |interaction|
+    interaction.request.headers['User-Agent'].first
+  end
+
+  c.filter_sensitive_data('<encoding>') do |interaction|
+    interaction.request.headers['Accept-Encoding'].first
+  end
 end

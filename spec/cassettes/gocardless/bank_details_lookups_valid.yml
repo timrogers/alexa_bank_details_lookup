@@ -8,7 +8,7 @@ http_interactions:
       string: '{"bank_details_lookups":{"country_code":"GB","account_number":"00622660","branch_code":"777224"}}'
     headers:
       User-Agent:
-      - gocardless_pro/v1.0.5 ruby/2.3.1p112 ruby/2.3.1 x86_64-darwin16 faraday/0.9.2
+      - "<user agent>"
       Gocardless-Version:
       - '2015-07-06'
       Content-Type:
@@ -16,7 +16,7 @@ http_interactions:
       Authorization:
       - "<access_token>"
       Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      - "<encoding>"
       Accept:
       - "*/*"
   response:
@@ -25,7 +25,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 15 Nov 2016 10:58:40 GMT
+      - Tue, 15 Nov 2016 11:17:27 GMT
       Content-Type:
       - application/json
       Transfer-Encoding:
@@ -33,8 +33,8 @@ http_interactions:
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dbde77a5e41be27493353e096b4923db71479207520; expires=Wed, 15-Nov-17
-        10:58:40 GMT; path=/; domain=.gocardless.com; HttpOnly
+      - __cfduid=dea2ee83213a650f32a71c50bbee66cc51479208647; expires=Wed, 15-Nov-17
+        11:17:27 GMT; path=/; domain=.gocardless.com; HttpOnly
       Pragma:
       - no-cache
       Cache-Control:
@@ -42,7 +42,7 @@ http_interactions:
       Etag:
       - W/"0b407e526651d9a7adacba3be0376f9d"
       X-Request-Id:
-      - 7ca31575-99f8-45eb-a5fb-35576acce597
+      - e235b755-069e-4cce-b393-61ae2d605498
       Vary:
       - Origin
       X-Xss-Protection:
@@ -56,14 +56,14 @@ http_interactions:
       Ratelimit-Remaining:
       - '999'
       Ratelimit-Reset:
-      - Tue, 15 Nov 2016 10:59:00 GMT
+      - Tue, 15 Nov 2016 11:18:00 GMT
       Server:
       - cloudflare-nginx
       Cf-Ray:
-      - 3022307aab030b7b-LHR
+      - 30224c0118f535cc-LHR
     body:
       encoding: ASCII-8BIT
       string: '{"bank_details_lookups":{"bank_name":"TSB BANK PLC","available_debit_schemes":["bacs"],"bic":"TSBSGB21429"}}'
     http_version: 
-  recorded_at: Tue, 15 Nov 2016 10:58:40 GMT
+  recorded_at: Tue, 15 Nov 2016 11:17:27 GMT
 recorded_with: VCR 3.0.3
