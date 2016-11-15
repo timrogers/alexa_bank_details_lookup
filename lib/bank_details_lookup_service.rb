@@ -6,7 +6,7 @@ class BankDetailsLookupService
     @access_token = access_token
   end
 
-  def look_up(account_number:, sort_code:)
+  def create(account_number:, sort_code:)
     client.bank_details_lookups.create(
       params: {
         country_code: 'GB',
