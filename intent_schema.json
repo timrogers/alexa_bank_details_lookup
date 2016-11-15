@@ -1,0 +1,17 @@
+{
+  "intents": [
+    {
+      "intent": "ValidateUkBankDetails",
+      "slots": [
+        {
+          "name": "AccountNumber",
+          "type": "AMAZON.NUMBER"
+        },
+        {
+          "name": "SortCode",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    }
+  ]
+}

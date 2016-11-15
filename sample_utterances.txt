@@ -1,0 +1,12 @@
+ValidateUkBankDetails check the u. k. account number {AccountNumber} and sort code {SortCode}
+ValidateUkBankDetails check the u. k. sort code {SortCode} and account number {AccountNumber}
+ValidateUkBankDetails look up the u. k. account number {AccountNumber} and sort code {SortCode}
+ValidateUkBankDetails look up the u. k. sort code {SortCode} and account number {AccountNumber}
+ValidateUkBankDetails look up the account number {AccountNumber} and sort code {SortCode}
+ValidateUkBankDetails check the account number {AccountNumber} and sort code {SortCode}
+ValidateUkBankDetails look up the sort code {SortCode} and account number {AccountNumber}
+ValidateUkBankDetails check the sort code {SortCode} and account number {AccountNumber}
+ValidateUkBankDetails what bank is sort code {SortCode} and account number {AccountNumber}
+ValidateUkBankDetails what bank is account number {AccountNumber} and sort code {SortCode}
+ValidateUkBankDetails what bank is u.k. sort code {SortCode} and account number {AccountNumber}
+ValidateUkBankDetails what bank is u.k. account number {AccountNumber} and sort code {SortCode}
